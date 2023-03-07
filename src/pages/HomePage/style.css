@@ -1,0 +1,31 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-inline: 2px;
+}
+
+.section img {
+    width: 100%;
+}
+
+
+.content {
+    padding: 2px 24px 24px;
+    font-weight: 200;
+}
+
+.homePage a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.content h1,p{
+    margin: 2px;
+}
+
+.content h1{
+font-weight: 400;
+
+}
