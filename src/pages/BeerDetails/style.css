@@ -1,0 +1,51 @@
+.image-ctn img{
+    height: 220px;
+    margin-top: 50px;
+}
+
+.title-ctn{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 32px;
+ 
+    justify-content: space-between;
+    
+}
+
+.title{
+    font-weight: 300;
+    margin: 16px 0px 4px;
+}
+
+.level{
+    font-weight: 500;
+    color: lightgrey;
+    margin: 16px 0px 4px;
+}
+
+.tagline-ctn{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 32px;
+    justify-content: space-between;
+}
+
+.tagline{
+    font-weight: 500;
+    color: grey;
+    margin-block: 8px;
+}
+
+.first-brewed{
+    margin-block: 8px;   
+}
+
+.description{
+    margin-inline: 32px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.description h5 {
+    color: grey;
+}

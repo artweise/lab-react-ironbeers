@@ -10,45 +10,47 @@ const HomePage = () => {
       <Link to="/beers">
         <div className="section">
           <img src={allBeers} alt="all-beers" />
-          <div className="content">
-            <h1>All Beers</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-              veritatis earum voluptate numquam error, doloremque architecto
-              delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati
-              est, perspiciatis officia reiciendis cumque exercitationem.
-            </p>
-          </div>
         </div>
       </Link>
+      <div className="content">
+        <h1>All Beers</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+          veritatis earum voluptate numquam error, doloremque architecto
+          delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati est,
+          perspiciatis officia reiciendis cumque exercitationem.
+        </p>
+      </div>
+
       <Link to={"/random-beer"}>
         <div className="section">
           <img src={randomBeer} alt="random-beer" />
-          <div className="content">
-            <h1>Random Beer</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-              veritatis earum voluptate numquam error, doloremque architecto
-              delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati
-              est, perspiciatis officia reiciendis cumque exercitationem.
-            </p>
-          </div>
         </div>
       </Link>
+      <div className="content">
+        <h1>Random Beer</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+          veritatis earum voluptate numquam error, doloremque architecto
+          delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati est,
+          perspiciatis officia reiciendis cumque exercitationem.
+        </p>
+      </div>
+
       <Link to={"/new-beer"}>
         <div className="section">
           <img src={newBeer} alt="new-beer" />
-          <div className="content">
-            <h1>New Beer</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
-              veritatis earum voluptate numquam error, doloremque architecto
-              delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati
-              est, perspiciatis officia reiciendis cumque exercitationem.
-            </p>
-          </div>
         </div>
       </Link>
+      <div className="content">
+        <h1>New Beer</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+          veritatis earum voluptate numquam error, doloremque architecto
+          delectus perspiciatis, ea ipsa eaque tempora! Fugiat obcaecati est,
+          perspiciatis officia reiciendis cumque exercitationem.
+        </p>
+      </div>
     </div>
   );
 };
