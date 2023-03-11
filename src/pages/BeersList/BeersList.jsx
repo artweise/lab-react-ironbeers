@@ -34,40 +34,27 @@ const BeersList = () => {
   //     });
   // }, []);
 
-  // fetch approach DOESN'T WORK??!!
-  // useEffect(() => {
-  //   fetch("https://ih-beers-api2.herokuapp.com/beers")
-  //     .then((response) => {
-  //       response.json();
-  //     })
-  //     .then((data) => {
-  //       console.log(data);
-  //       setAllBeers(data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
-
   return (
     <div>
-      {allBeers.map((individualBeer, index) => (
-        <div key={index} className="one-beer-ctn">
-          <div className="image-ctn">
-            <Link to={`/beers/${individualBeer._id}`}>
-              <img src={individualBeer.image_url} alt="" />
-            </Link>
+      {allBeers.length === 0 && <h1 className="loading">Loading ...</h1>}
+      {allBeers.length > 0 &&
+        allBeers.map((individualBeer, index) => (
+          <div key={index} className="one-beer-ctn">
+            <div className="image-ctn">
+              <Link to={`/beers/${individualBeer._id}`}>
+                <img src={individualBeer.image_url} alt="" />
+              </Link>
+            </div>
+            <div className="content-ctn">
+              <h2>{individualBeer.name}</h2>
+              <h4>{individualBeer.tagline}</h4>
+              <p>
+                contributed by: <b>{individualBeer.contributed_by}</b>
+              </p>
+              <Link to={`/beers/${individualBeer._id}`}>more details</Link>
+            </div>
           </div>
-          <div className="content-ctn">
-            <h2>{individualBeer.name}</h2>
-            <h4>{individualBeer.tagline}</h4>
-            <p>
-              contributed by:<b>{individualBeer.contributed_by}</b>
-            </p>
-            <Link to={`/beers/${individualBeer._id}`}>more details</Link>
-          </div>
-        </div>
-      ))}
+        ))}
     </div>
   );
 };

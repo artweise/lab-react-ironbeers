@@ -10,6 +10,8 @@ const HomePage = () => {
       <Link to="/beers">
         <div className="section">
           <img src={allBeers} alt="all-beers" />
+          {/* in order not to import, we can put all pics in public */}
+          {/* <img src="/beers.png" alt="all-beers" /> */}
         </div>
       </Link>
       <div className="content">
@@ -22,7 +24,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <Link to={"/random-beer"}>
+      <Link to={"/beers/random"}>
         <div className="section">
           <img src={randomBeer} alt="random-beer" />
         </div>

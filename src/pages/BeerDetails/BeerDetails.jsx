@@ -5,7 +5,7 @@ import "./style.css";
 
 const BeerDetails = () => {
   const { beerId } = useParams();
-  console.log("beerId", beerId);
+  console.log("beerId -->", beerId);
   const [foundBeer, setFoundBeer] = useState("");
 
   useEffect(() => {

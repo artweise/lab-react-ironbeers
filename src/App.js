@@ -10,16 +10,19 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<HomePage />}></Route>
-      </Routes>
+      <>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </>
+
       <>
         <Header />
         <Routes>
           <Route path="/beers" element={<BeersList />} />
           <Route path="/beers/:beerId" element={<BeerDetails />} />
-          <Route path="/random-beer" element={<RandomBeer />} />
-          <Route path="/new-beer" element={<NewBeer />} />
+          <Route path="/beers/random" element={<RandomBeer />} />
+          <Route path="/beers/new-beer" element={<NewBeer />} />
           {/* <Route path="*" element={NotFound} /> */}
         </Routes>
       </>
