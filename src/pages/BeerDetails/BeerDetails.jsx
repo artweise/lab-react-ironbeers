@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import Header from "../../components/Header/Header";
 import "./style.css";
 
 const BeerDetails = () => {
@@ -38,6 +39,7 @@ const BeerDetails = () => {
 
   return (
     <>
+      <Header />
       <div className="image-ctn">
         <img src={foundBeer.image_url} alt="" />
       </div>

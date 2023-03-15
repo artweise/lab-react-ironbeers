@@ -39,7 +39,7 @@ const HomePage = () => {
         </p>
       </div>
 
-      <Link to={"/new-beer"}>
+      <Link to={"/beers/new"}>
         <div className="section">
           <img src={newBeer} alt="new-beer" />
         </div>
