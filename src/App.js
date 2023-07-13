@@ -12,22 +12,14 @@ const App = () => {
   // console.log("useLocation -->", pathname);
   return (
     <div className="App">
-      <>
-        <Routes>
-          <Route path="/" element={<HomePage />}></Route>
-        </Routes>
-      </>
-
-      <>
-        {/* <Header /> */}
-        <Routes>
-          <Route path="/beers" element={<BeersList />} />
-          <Route path="/beers/:beerId" element={<BeerDetails />} />
-          <Route path="/beers/random" element={<RandomBeer />} />
-          <Route path="/beers/new" element={<NewBeer />} />
-          {/* <Route path="*" element={NotFound} /> */}
-        </Routes>
-      </>
+      <Routes>
+        <Route path="/" element={<HomePage />}></Route>
+        <Route path="/beers" element={<BeersList />} />
+        <Route path="/beers/:beerId" element={<BeerDetails />} />
+        <Route path="/beers/random" element={<RandomBeer />} />
+        <Route path="/beers/new" element={<NewBeer />} />
+        {/* <Route path="*" element={NotFound} /> */}
+      </Routes>
     </div>
   );
 };

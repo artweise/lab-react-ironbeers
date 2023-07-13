@@ -29,6 +29,7 @@ const NewBeer = () => {
       .post("https://ih-beers-api2.herokuapp.com/beers/new", bodyToPost)
       .then((response) => {
         console.log(response.data);
+        alert("New beer was created and published!");
         navigate("/beers");
       })
       .catch((err) => {
